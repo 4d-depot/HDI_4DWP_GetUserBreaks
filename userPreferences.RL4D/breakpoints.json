@@ -1,0 +1,11 @@
+[
+	{
+		"line": 13,
+		"method": {
+			"type": 2,
+			"formName": "HDI2",
+			"objectName": "btnAction",
+			"methodPath": "/SOURCES/Forms/HDI2/ObjectMethods/btnAction.4dm"
+		}
+	}
+]

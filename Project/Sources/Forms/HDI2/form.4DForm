@@ -1,0 +1,636 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1200,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onTimer"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 40,
+					"width": 460,
+					"height": 860
+				},
+				"Text5": {
+					"type": "text",
+					"text": "The most common break is the \"paragraph break\", but there are more kinds of breaks!",
+					"top": 90,
+					"left": 80,
+					"width": 340,
+					"height": 90,
+					"fontSize": 24
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Line breaks force a new line within a paragraph without creating a new one.",
+					"top": 260,
+					"left": 80,
+					"width": 340,
+					"height": 90,
+					"fontSize": 24
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Column breaks force a jump to the next column.",
+					"top": 435,
+					"left": 80,
+					"width": 340,
+					"height": 70,
+					"fontSize": 24
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Page breaks force a jump to the next page.",
+					"top": 585,
+					"left": 80,
+					"width": 340,
+					"height": 70,
+					"fontSize": 24
+				},
+				"Text11": {
+					"type": "text",
+					"text": "And finally, \"Section breaks\" create a new section.",
+					"top": 740,
+					"left": 80,
+					"width": 340,
+					"height": 70,
+					"fontSize": 24
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 40,
+					"left": 540,
+					"width": 620,
+					"height": 360
+				},
+				"Text12": {
+					"type": "text",
+					"text": "All these breaks can be inserted by the users, but sometimes breaks are not used the way they should be.",
+					"top": 90,
+					"left": 580,
+					"width": 510,
+					"height": 90,
+					"fontSize": 24,
+					"fontStyle": "italic"
+				},
+				"Text13": {
+					"type": "text",
+					"text": "e.g., many paragraph breaks instead of a single page break, a page break instead of a section break, etc.",
+					"top": 249,
+					"left": 580,
+					"width": 510,
+					"height": 110,
+					"fontSize": 24,
+					"fontStyle": "italic"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 440,
+					"left": 540,
+					"width": 620,
+					"height": 460
+				},
+				"Text14": {
+					"type": "text",
+					"text": "This \"HDI\" introduces a command that returns all of the breaks that have been inserted by users.",
+					"top": 479,
+					"left": 580,
+					"width": 510,
+					"height": 90,
+					"fontSize": 24,
+					"fontWeight": "normal"
+				},
+				"Text15": {
+					"type": "text",
+					"text": "• Knowing the break positions, you'll be able to remove or replace them.",
+					"top": 621,
+					"left": 580,
+					"width": 510,
+					"height": 70,
+					"fontSize": 24
+				},
+				"Text16": {
+					"type": "text",
+					"text": "• You'll also be able to remove all unnecessary duplicates!",
+					"top": 740,
+					"left": 580,
+					"width": 510,
+					"height": 70,
+					"fontSize": 24
+				},
+				"Button": {
+					"type": "button",
+					"text": "DEMO",
+					"top": 920,
+					"left": 1000,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 590,
+					"left": 433,
+					"width": 48,
+					"height": 48,
+					"picture": "Images/Static Picture2.tif",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 430,
+					"left": 433,
+					"width": 48,
+					"height": 48,
+					"picture": "Images/Static Picture4.tif",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 110,
+					"left": 433,
+					"width": 48,
+					"height": 48,
+					"picture": "Images/Static Picture5.tif",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 270,
+					"left": 425,
+					"width": 48,
+					"height": 48,
+					"picture": "Images/Static Picture6.tif",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 746,
+					"left": 433,
+					"width": 48,
+					"height": 48,
+					"picture": "Images/Static Picture1.tif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Oval2": {
+					"type": "oval",
+					"top": 573,
+					"left": 778,
+					"width": 35,
+					"height": 35,
+					"fill": "#ffd700"
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 393,
+					"left": 778,
+					"width": 35,
+					"height": 35,
+					"fill": "#ffd700"
+				},
+				"Oval": {
+					"type": "oval",
+					"top": 43,
+					"left": 778,
+					"width": 35,
+					"height": 35,
+					"fill": "#ffd700"
+				},
+				"MessageFrame": {
+					"type": "rectangle",
+					"top": 720,
+					"left": 820,
+					"width": 340,
+					"height": 80,
+					"visibility": "hidden",
+					"sizingX": "move"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Save",
+					"top": 980,
+					"left": 20,
+					"width": 77,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"method": "ObjectMethods/Button1.4dm",
+					"stroke": "#ff6347",
+					"sizingY": "move"
+				},
+				"Button3": {
+					"type": "button",
+					"text": "(re)Load sample",
+					"top": 920,
+					"left": 600,
+					"width": 160,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"method": "ObjectMethods/Button3.4dm",
+					"sizingY": "move"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "1.",
+					"top": 49,
+					"left": 790,
+					"width": 20,
+					"height": 16,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "Remove and replace",
+					"top": 403,
+					"left": 830,
+					"width": 151,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "left",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "2.",
+					"top": 400,
+					"left": 790,
+					"width": 20,
+					"height": 16,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"WParea": {
+					"type": "write",
+					"top": 30,
+					"left": 20,
+					"width": 740,
+					"height": 870,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"showHiddenChars": true,
+					"showSelection": true,
+					"showVerticalRuler": false,
+					"showHorizontalRuler": false
+				},
+				"List Box": {
+					"type": "listbox",
+					"left": 830,
+					"top": 95,
+					"width": 350,
+					"height": 276,
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"dataSource": "Form:C1466.breaks",
+					"listboxType": "collection",
+					"scrollbarHorizontal": "hidden",
+					"sizingX": "move",
+					"method": "ObjectMethods/List Box.4dm",
+					"currentItemSource": "Form:C1466.currentBreak",
+					"sizingY": "fixed",
+					"columns": [
+						{
+							"header": {
+								"text": "Type",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "Choose:C955(This:C1470.breakType; \"line break\"; \"section break\"; \"page break\"; \"column break\"; \"Paragraph break\")",
+							"width": 135
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "Start"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.start",
+							"width": 100
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "End"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "This:C1470.end",
+							"width": 100
+						}
+					]
+				},
+				"Button16": {
+					"type": "button",
+					"text": "Get breaks !",
+					"top": 50,
+					"left": 1073,
+					"width": 107,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"method": "ObjectMethods/Button16.4dm",
+					"sizingY": "fixed"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 1098,
+					"top": 378,
+					"width": 82,
+					"height": 17,
+					"dataSource": "Form:C1466.breaks.length",
+					"sizingX": "move",
+					"sizingY": "fixed",
+					"scrollbarVertical": "hidden",
+					"dataSourceTypeHint": "integer",
+					"enterable": false,
+					"numberFormat": "(###,###,##0 items)",
+					"fontWeight": "bold",
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"PopupRemoveLabels": {
+					"type": "dropdown",
+					"left": 956,
+					"top": 443,
+					"width": 214,
+					"height": 27,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_RemoveBreaks",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"PopupReplaceLabels": {
+					"type": "dropdown",
+					"left": 956,
+					"top": 478,
+					"width": 214,
+					"height": 27,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_ReplaceBreaks",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"btnRemove": {
+					"type": "radio",
+					"text": "Remove:",
+					"top": 443,
+					"left": 845,
+					"width": 134,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"radioGroup": "RemoveReplace",
+					"dataSource": "Form:C1466.remove",
+					"method": "ObjectMethods/btnRemove.4dm",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"btnReplace": {
+					"type": "radio",
+					"text": "Replace by:",
+					"top": 478,
+					"left": 845,
+					"width": 134,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"radioGroup": "RemoveReplace",
+					"dataSource": "Form:C1466.replace",
+					"method": "ObjectMethods/btnReplace.4dm",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"btnAction": {
+					"type": "button",
+					"text": "• Remove •",
+					"top": 525,
+					"left": 890,
+					"width": 280,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"method": "ObjectMethods/btnAction.4dm",
+					"sizingY": "fixed"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Clean up",
+					"top": 583,
+					"left": 830,
+					"width": 151,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "left",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "3.",
+					"top": 580,
+					"left": 790,
+					"width": 20,
+					"height": 16,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"PopupRemoveLabels1": {
+					"type": "dropdown",
+					"left": 956,
+					"top": 613,
+					"width": 214,
+					"height": 27,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_RemoveDoubles",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"btnAction1": {
+					"type": "button",
+					"text": "Clean up",
+					"top": 665,
+					"left": 890,
+					"width": 280,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"method": "ObjectMethods/btnAction1.4dm",
+					"sizingY": "fixed",
+					"focusable": false
+				},
+				"Text": {
+					"type": "text",
+					"text": "Remove double:",
+					"top": 618,
+					"left": 800,
+					"width": 150,
+					"height": 16,
+					"textAlign": "right",
+					"sizingX": "move"
+				},
+				"MessageText": {
+					"type": "input",
+					"left": 840,
+					"top": 735,
+					"width": 300,
+					"height": 50,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"fontWeight": "normal",
+					"fontSize": 18,
+					"textAlign": "center",
+					"visibility": "hidden",
+					"sizingX": "move",
+					"stroke": "#F08A73"
+				},
+				"PopupRemoveLabels2": {
+					"type": "dropdown",
+					"left": 918,
+					"top": 50,
+					"width": 144,
+					"height": 21,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_BreakNames",
+					"sizingY": "fixed",
+					"sizingX": "move",
+					"focusable": false
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 916,
+					"left": 820,
+					"width": 174,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.trace"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Sample code from BLOG",
+					"top": 1006,
+					"left": 840,
+					"width": 272,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Get breaks",
+					"top": 53,
+					"left": 830,
+					"width": 101,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "left",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				}
+			}
+		}
+	],
+	"geometryStamp": 2301,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 1200,
+	"height": 960
+}
